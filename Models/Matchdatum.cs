@@ -5,7 +5,7 @@ namespace basketball.Models;
 
 public partial class Matchdatum
 {
-    public string Id { get; set; } = null!;
+    public Guid? Id { get; set; }
 
     public DateTime Belep { get; set; }
 
@@ -21,7 +21,7 @@ public partial class Matchdatum
 
     public DateTime UpdatedTime { get; set; }
 
-    public string PlayerId { get; set; } = null!;
+    public Guid PlayerId { get; set; }
 
     public virtual Player Player { get; set; } = null!;
 }

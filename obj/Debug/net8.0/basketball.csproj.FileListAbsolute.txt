@@ -124,3 +124,4 @@ C:\Users\Tanulo\GitWorkDir\basketball\obj\Debug\net8.0\refint\basketball.dll
 C:\Users\Tanulo\GitWorkDir\basketball\obj\Debug\net8.0\basketball.pdb
 C:\Users\Tanulo\GitWorkDir\basketball\obj\Debug\net8.0\basketball.genruntimeconfig.cache
 C:\Users\Tanulo\GitWorkDir\basketball\obj\Debug\net8.0\ref\basketball.dll
+C:\Users\Tanulo\GitWorkDir\basketball\obj\Debug\net8.0\basketball.sourcelink.json
