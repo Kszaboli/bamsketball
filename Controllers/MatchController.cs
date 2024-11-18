@@ -56,7 +56,7 @@ namespace basketball.Controllers
                 }
                 return NotFound();
             }
-        }
+        }     
 
         [HttpPut]
         public ActionResult<Matchdatum> Put(Guid id, UpdateMatchdataDto updateMatchdataDto)

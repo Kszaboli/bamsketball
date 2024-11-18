@@ -1,4 +1,6 @@
 
+using System.Text.Json.Serialization;
+
 namespace basketball
 {
     public class Program
@@ -6,6 +8,7 @@ namespace basketball
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
             // Add services to the container.
 

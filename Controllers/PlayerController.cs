@@ -1,6 +1,7 @@
 ﻿using basketball.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace basketball.Controllers
 {
@@ -52,6 +53,15 @@ namespace basketball.Controllers
                     return StatusCode(200, player);
                 }
                 return NotFound();
+            }
+        }
+
+        [HttpGet("With_Matchdata")]
+        public ActionResult<Player> GetWithMark()
+        {
+            using (var context = new BasketteamContext())
+            {
+                return Ok(context.Players.Include(x => x.Matchdata).ToList());
             }
         }
 

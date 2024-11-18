@@ -256,5 +256,25 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "basketball.Controllers.PlayerController",
+    "Method": "GetWithMark",
+    "RelativePath": "Player/With_Matchdata",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "basketball.Models.Player",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
